@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Price Prediction</title>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<h1>MOBILE PRICE PREDICTION</h1>
+<h3>"Unlock the power of data and technology with our mobile price prediction tool, providing you insights into the future cost of your favorite devices."</h3>
+<form action="form" style="max-width: 1110px;
+                        font-weight: normal;
+                        line-height: 1.625;
+                        margin: 8px auto;
+                        padding-left: 16px;
+                        z-index: 2;">
+    
+    <div>
+        <h2>Mobile Name</h2>
+        <select class="name" id="uiName">
+            <option value="" disabled = "disabled"
+            selected="selected">Choose Your Mobile Phone</option>
+            <option>alcatel 3x (black, 32 gb)</option>
+        </select>
+        <div>
+            <h2>Battery(mAh)</h2>
+            <input class="battery" type="text" id="uiBattery"
+            name="battery" value="3000">
+            <h2>Camera Quality(MP)</h2>
+            <input class="battery" type="text" id="uiCamera"
+            name="battery" value="12">
+            <h2>Storage(RAM(GB))</h2>
+            <input class="battery" type="text" id="uiRAM"
+            name="battery" value="12">
+            <h2>Storage(ROM(GB))</h2>
+            <input class="battery" type="text" id="uiROM"
+            name="battery" value="58">
+            
+            <h2>Display(cm)</h2>
+            <input class="battery" type="text" id="uiDisplay"
+            name="battery" value="14">
+            
+
+        </div>
+    </div>
+    <button class="submit" onclick="onClickedEstimatePrice()"
+    type="button">Estimate Price</button>
+    <div id="uiEstimatedPrice" class="result">
+    </div>
+</form>
+</body>
+</html>
